@@ -238,7 +238,6 @@ footer {
 }
 
 .image-container {
-    
     min-width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -405,7 +404,8 @@ footer {
 }
 
 #toggle-reviews {
-    margin-top: 20px; 
+    margin-top: 20px;
+    font-size: 16px; 
     padding: 10px 15px; 
     background-color: rgba(255, 110, 0, 0.9); 
     color: white; 
@@ -436,6 +436,19 @@ footer {
 
 .view-all:hover {
     color: black;
+}
+
+/* Eventos */
+
+.main-events{
+    background-color: #ff6600;
+}
+
+.main-events h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding: 50px;
 }
 
 /* Footer */

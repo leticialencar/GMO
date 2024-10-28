@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMO</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rpg.css">
 </head>
 <body>
     <header class="container">
@@ -15,11 +17,283 @@
             </div>
     
             <div class="search">
-                <input type="text" placeholder="Pesquisar nesta seção">
+                <input type="text" placeholder="Pesquisar nesta sessão">
                 <div class="btn" id="search-button"> 
                     <button>Buscar</button>
                 </div>
             </div>            
         </div>
+    
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Destaques</a></li>
+                <li><a href="index.html">Novidades</a></li>
+                <li><a href="index.html">Reviews</a></li>
+                <li><a href="index.html">Eventos</a></li>
+                <li><a href="index.html">Trailers</a></li>
+                <li class="dropdown">Navegue por Categoria 
+                    <ul class="dropdown-content">
+                        <li><a href="rpg.html">RPG</a></li>
+                        <li><a href="indie.html">Indie</a></li>
+                        <li><a href="horror.html">Terror</a></li>
+                        <li><a href="action.html">Ação</a></li>
+                        <li><a href="adventure.html">Aventura</a></li>
+                        <li><a href="strategy.html">Estratégia</a></li>
+                        <li><a href="fps.html">FPS</a></li>
+                        <li><a href="simulacao.html">Simulação</a></li>
+                        <li><a href="fight.html">Luta</a></li>
+                        <li><a href="plataforma.html">Plataforma</a></li>
+                        <li><a href="multiplayer.html">Multiplayer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>                
+    </header>
+
+    <section class="main-honkai">
+        <div class="title-container">
+            <h2>Honkai Star Rail</h2>
+            <h6>Hoyoverse</h6>
+        </div>
+        <section class="honkai">
+            <div class="carousel-section">
+                <div class="carousel">
+                    <div class="carousel-videos" data-game="honkai">
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/honkai-intro.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/honkai-gameplay.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/honkai-cs.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/honkai-extra.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'honkai')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'honkai')">&#10095;</button>
+                </div>
+                <div class="carousel-description">
+                    <h2 id="honkai-slide-title">Título.</h2>
+                    <h4 id="honkai-slide-subtitle">Subtítulo.</h4> 
+                    <span id="honkai-slide-description">Descrição.</span>
+                </div>                              
+            </div>
+        </section>
+    </section>
+
+    <div class="characters-intro">
+        <h2>Personagens</h2>
+        <h4>O desbravador/A desbravadora</h4>
+        <p>É o personagem jogável protagonista de Honkai: Star Rail. Eles são despertados durante os eventos de abertura do jogo por Kafka e Loba Prateada, que os deixam para serem encontrados por 7 de Março e Dan Heng na Estação Espacial Herta durante a invasão da Legião Antimatéria. O jogador pode escolher entre Stelle (feminino) ou Caelus (masculino), junto com o Codinome do Receptáculo. Os Desbravadores são obtidos após completar a Missão de Desbravamento Caos nas Profundezas.</p>
+    </div>
+
+        <div class="card-container honkai">
+            <div class="card himeko" onclick="showModal('Himeko', 'Uma cientista aventureira que conheceu o Expresso Astral quando era jovem e ficou preso em seu planeta natal. Anos depois, Himeko finalmente consertou o trem e começou sua jornada para as estrelas, mas percebeu que isso era apenas o começo. Em sua jornada pioneira, ela precisaria de muito mais companheiros... E embora possam ter destinos diferentes, todos olham para o mesmo céu estrelado.Com habilidades de fogo, Himeko é uma combatente poderosa e uma líder acolhedora.', './img/categories/rpg/himeko-ult-honkai.png', '<i>&quot;Tudo bem, tripulação! Este mundo é o alvo da nossa próxima expedição pioneira!&quot;</i><br>')">
+                <img src="./img/categories/rpg/himeko-honkai.png" alt="Himeko">
+                <h3>Himeko</h3>
+            </div>
+            <div class="card welt" onclick="showModal('Welt', 'O sábio e experiente antigo Soberano Anti-Entropia que herda o nome do mundo — Welt. Ele salvou a Terra da aniquilação uma e outra vez. Welt possui habilidades de controle do tempo e do espaço, permitindo-lhe criar portais e manipular batalhas. Sua personalidade é calma e reflexiva, demonstrando preocupação pelos outros e um profundo senso de responsabilidade. Ele desempenha um papel crucial nas histórias relacionadas à busca por Stellaron, simbolizando a luta pela sobrevivência e redenção em um mundo devastado. Às vezes ele esboça as experiências vividas em um caderno.', './img/categories/rpg/welt-ult-honkai.png', '<i>&quot;A galáxia é vasta além de qualquer comparação, contendo um número infinito de possibilidades. O destino de um indivíduo não deve ser limitado a um único caminho ordenado pelo céu.&quot;</i><br>')">
+                <img src="./img/categories/rpg/welt-honkai.png" alt="Welt">
+                <h3>Welt</h3>
+            </div>
+            <div class="card danheng" onclick="showModal('Dan Heng', 'Um jovem frio e reservado que empunha uma lança conhecida como Perfurador de Nuvens. Ele atua como guarda do Expresso e sua longa expedição pioneira. Dan Heng nunca fala muito sobre seu passado. Na verdade, ele se juntou à Tripulação do Expresso para escapar dele. Mas o Expresso pode realmente ajudá-lo fugir de seu passado? Com habilidades de combate usando vento e uma lança, ele é um guerreiro ágil e preciso. Embora sério e introspectivo, Dan Heng tem um forte desejo de proteger sua equipe, lutando para aceitar quem realmente é enquanto explora o universo.', './img/categories/rpg/danheng-ult-honkai.png', '<i>&quot;Enquanto falamos, despedidas estão acontecendo por todo o universo. A dor que compartilhamos é real, mas não há nada de especial nela.&quot;</i><br>')">
+                <img src="./img/categories/rpg/danheng-honkai.png" alt="Dan Heng">
+                <h3>Dan Heng</h3>
+            </div>
+            <div class="card march" onclick="showModal('7 de Março', 'Uma garota entusiasmada e peculiar que foi salva do gelo eterno pela tripulação do Expresso Astral, tem a habilidade única de usar o Gelo de Seis Fases. Quando ela acordou, ela não sabia nada sobre si mesma ou sobre seu passado, e decidiu nomear-se com o nome da data de seu renascimento, “7 de Março”. Ela tira muitas fotos usando sua câmera na esperança de descobrir uma lembrança de seu passado. Com habilidades de gelo e um forte instinto protetor, ela usa seu arco para proteger aliados e enfrentar perigos, trazendo otimismo e determinação à equipe enquanto tenta desvendar o mistério de sua identidade.', './img/categories/rpg/7march-ult-honkai.png', '<i>&quot;Ora, preste bastante atenção! Eu salvei todo mundo sem causar problemas! Você é muito incrível, 7 de Março!&quot;</i><br>')">
+                <img src="./img/categories/rpg/7march-honkai.png" alt="7 de Março">
+                <h3>7 de Março</h3>
+            </div>
+            <div class="card kafka" onclick="showModal('Kafka', 'Na lista de procurados da Corporação Interastral para a Paz, o registro de Kafka tem apenas duas coisas: seu nome e uma única frase: Gosta de colecionar casacos. Pouco se sabe sobre esta Caçadora de Stellaron, além de que ela é uma das escravas mais confiáveis do Escravo Elio de Destiny. Para alcançar o futuro imaginado por Elio, Kafka começa a trabalhar. As pessoas sempre a imaginaram como elegante, respeitável e em busca de coisas belas, mesmo em combate. Embora suas intenções permaneçam incertas, Kafka segue suas próprias motivações e missões, agindo com uma tranquilidade inquietante e deixando sempre um rastro de mistério sobre seu passado e objetivos reais.', './img/categories/rpg/kafka-ult-honkai.png', '<i>&quot;Você não vai se lembrar de nada, exceto de mim.&quot;</i><br>')">
+                <img src="./img/categories/rpg/kafka-honkai.png" alt="Kafka">
+                <h3>Kafka</h3>
+            </div>
+            <div class="card blade" onclick="showModal('Blade', 'Um espadachim que abandonou seu corpo para se tornar uma lâmina, ele é conhecido por seu estilo de combate arriscado e autodestrutivo. Membro dos Stellaron Hunters com um passado sombrio e um corpo imortal que carrega cicatrizes físicas e emocionais. Ele jurou lealdade ao Escravo do Destino e possuía uma terrível habilidade de autocura. Blade empunha uma espada antiga cheia de rachaduras, assim como seu corpo e sua mente. Blade é reservado e distante, impulsionado por um sofrimento profundo e uma busca por redenção ou paz, que o leva a confrontar os traumas do passado enquanto mantém uma atitude fria e impenetrável', './img/categories/rpg/blade-ult-honkai.png', '<i>&quot;Quando a morte virá para mim? Minha paciência está se esgotando.&quot;</i><br>')">
+                <img src="./img/categories/rpg/blade-honkai.png" alt="Blade">
+                <h3>Blade</h3>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="main-darksouls">
+        <div class="title-container">
+            <h2>Dark Souls</h2>
+            <h6>FromSoftware</h6>
+        </div>
+        <section class="darksouls">
+            <div class="carousel-section">
+                <div class="carousel darksouls-carousel">
+                    <div class="carousel-videos" data-game="darksouls">
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/darksouls-intro.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/darksouls-gameplay.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/darksouls-legacy.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'darksouls')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'darksouls')">&#10095;</button>
+                </div>
+                <div class="carousel-description">
+                    <h2 id="darksouls-slide-title">Título.</h2>
+                    <h4 id="darksouls-slide-subtitle">Subtítulo.</h4> 
+                    <span id="darksouls-slide-description">Descrição.</span>
+                </div>                              
+            </div>
+        </section>
+    </section>
+
+    <section class="main-baldursgate">
+        <div class="title-container">
+            <h2>Baldur's Gate III</h2>
+            <h6>Larian Studios</h6>
+        </div>
+        <section class="baldursgate">
+            <div class="carousel-section">
+                <div class="carousel baldursgate-carousel">
+                    <div class="carousel-videos" data-game="baldursgate">
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/baldursgate-about.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/baldursgate-story.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/baldursgate-gameplay.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                        <div class="video-container">
+                            <figure>
+                                <video autoplay loop muted>
+                                    <source src="./video/baldursgate-mp.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'baldursgate')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'baldursgate')">&#10095;</button>
+                </div>
+                <div class="carousel-description">
+                    <h2 id="baldursgate-slide-title">Título.</h2>
+                    <h4 id="baldursgate-slide-subtitle">Subtítulo.</h4> 
+                    <span id="baldursgate-slide-description">Descrição.</span>
+                </div>                              
+            </div>
+
+            <div class="characters-intro">
+                <h2>Personagens</h2>
+                <p>Apesar do jogo contar com um vasto sistema de criação de personagem, é possível escolher jogar com um dos personagens pré-prontos: os chamados personagens de origem. Ao jogar com um herói customizado, esses personagens aparecem como companions que podem ser recrutados, enquanto ao jogar com eles você recebe opções diferentes e únicas para cada um. Ao todo, são seis origens que podem ser escolhidas: Astarion, o elfo ladino; Gale, o mago humano; Lae’zel, a guerreira Githyanki; Umbralma, a clériga meio-elfa; Wyll, o bruxo humano; e, por fim, Karlach, a bárbara tiferina.</p>
+            </div>
+    
+            <div class="cards-container">
+                <div class="card astarion" onclick="showModal('Astarion', 'Astarion é um personagem de destaque em Baldur\'s Gate 3, sendo um Ladino Elfo Superior que serviu a um mestre vampiro por 200 anos. Ele pode ser o protagonista ou um membro recrutável do grupo. Especialista em furtividade e ataques furtivos, Astarion possui habilidades em enganação, prestidigitação, acrobacia, percepção, performance e persuasão, além de ser proficiente em várias armas, como espadas longas e arcos. Infectado por um parasita Illithid, ele busca uma cura enquanto persegue seu antigo mestre, Cazador Szarr. ', './img/categories/rpg/astarion-baldursgate.png', '<i>&quot;E pensar que eu estava pronto para decorar o chão com suas entranhas. Desculpas.&quot;</i><br> — Astarion, se desculpando após um mal-entendido')">
+                    <img src="./img/categories/rpg/astarion-baldursgate.png" alt="Astarion">
+                    <h3>Astarion</h3>
+                </div>                                
+                
+                <div class="card gale" onclick="showModal('Gale', 'Gale é um Mago Humano com o antecedente Sábio, especializado em arcanismo, história, investigação, percepção e persuasão. No início, ele possui três Truques, seis magias e quatro magias preparadas, além de ser proficiente em armadura leve, escudos, adagas, cajados, bestas de mão, lanças, piques, alabardas e gládios. Sua habilidade como mago o fez conquistar o amor de Mystra, a deusa da magia, mas sua ambição o levou a uma situação catastrófica.', './img/categories/rpg/gale-baldursgate.png', '<i>&quot;Há uma rajada em você, mas é uma mera brisa. Preciso de uma tempestade.&quot;</i><br> — A fome de Gale por magia poderosa.')">
+                    <img src="./img/categories/rpg/gale-baldursgate.png" alt="Gale">
+                    <h3>Gale</h3>
+                </div>
+                
+                <div class="card laezel" onclick="showModal('Lae’zel', 'Lae\'zel é uma Guerreira Githyanki com o antecedente Soldado, destacando-se em atletismo, acrobacia, sobrevivência e intimidação. Ela é proficiente em armaduras leves, médias e pesadas, escudos, armas simples e marciais, além de espadas curtas, longas e grandes. Criada para lutar entre as estrelas, Lae\'zel foi uma soldada implacável, mas agora presa na Terra, enfrenta o desafio de se adaptar a um mundo que não compreende, enquanto busca uma maneira de servir seu povo militarista.', './img/categories/rpg/laezel-baldursgate.png', '<i>&quot;Quem sou eu? Sua única chance de sobrevivência.&quot;</i><br> — Lae\'zel se apresenta.')">
+                    <img src="./img/categories/rpg/laezel-baldursgate.png" alt="Lae’zel">
+                    <h3>Lae’zel</h3>
+                </div>                 
+    
+                <div class="card shadowheart" onclick="showModal('Shadowheart', 'Shadowheart é uma Clériga Meio-Elfa Superior da Subclasse Trapaça, com o antecedente Acólito, destacando-se em percepção, religião, história e medicina. No início, ela recebe quatro Truques e quatro magias preparadas, além de ser proficiente em armaduras leves e médias, escudos, armas simples, maças de manhã, lanças, piques, alabardas e gládios. Para proteger os segredos de seus companheiros adoradores de Shar, Shadowheart voluntariamente passou por um ritual que removeu suas memórias. Embora a perda e a dor sejam sagradas para ela, sua fé está sendo severamente testada.', './img/categories/rpg/shadowheart-baldursgate.png', '<i>&quot;Estamos juntos nisso, mas eu vou feliz sozinha. Minha fé me fará companhia.&quot;</i><br> — A forte devoção de Shadowheart')">
+                    <img src="./img/categories/rpg/shadowheart-baldursgate.png" alt="Shadowheart">
+                    <h3>Shadowheart</h3>
+                </div>
+                
+                <div class="card wyll" onclick="showModal('Wyll', 'Wyll é um Bruxo Humano da Subclasse O Demônio, com o antecedente Herói Popular. Ele se destaca em habilidades como tratamento de animais, sobrevivência, arcanismo, intimidação e persuasão. No início, Wyll recebe dois Truques e duas magias, além de ser proficiente com armadura leve, escudos e várias armas. Conhecido como \'A Lâmina das Fronteiras\', ele usa sua magia para enfrentar monstros e diabos que ameaçam a Costa da Espada. No entanto, sua busca por poder o levou a aceitar uma oferta que o envolve em um jogo infernal, do qual ele luta para se libertar.', './img/categories/rpg/wyll-baldursgate.png', '<i>&quot;As fronteiras exigiam uma lâmina. E então eu atendi.&quot;</i><br> — Wyll , Como a Lâmina das Fronteiras surgiu.')">
+                    <img src="./img/categories/rpg/wyll-baldursgate.png" alt="Wyll">
+                    <h3>Wyll</h3>
+                </div>
+                
+                <div class="card karlach" onclick="showModal('Karlach', 'Karlach é uma Bárbara Tiefling de Zariel com o antecedente Forasteiro, destacando-se em atletismo, sobrevivência, percepção e intimidação. Ela é proficiente com armadura leve, média, escudos e diversas armas. Após escapar de dez anos de serviço nos Infernos, Karlach carrega apenas seu machado nas costas e um motor infernal ardendo onde costumava estar seu coração.', './img/categories/rpg/karlach-baldursgate.png', '<i>&quot;Avernus nunca foi meu lar. Era minha prisão. Estou livre agora. E NUNCA MAIS VOU VOLTAR.&quot;</i><br> — Karlach , confrontando os servos de Zariel.')">
+                    <img src="./img/categories/rpg/karlach-baldursgate.png" alt="Karlach">
+                    <h3>Karlach</h3>
+                </div>
+
+            </div>
+        
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modal-image" src="" alt="Imagem do Personagem" style="width: 100%; max-width: 300px; border-radius: 10px; margin-bottom: 15px;">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+
+            <div class="characters-intro">
+                <h2>Plataformas</h2>
+                <p>Por fim, Baldur’s Gate 3 é um jogo extremamente focado em narrativa, mas que a todo momento permite ao jogador influenciar como essa narrativa se desenvolve. Por meio de suas ações e escolhas nas missões, sejam elas secundárias ou principais, é possível levar os acontecimentos a caminhos diferentes, e são tantas opções que é impossível conferir tudo que o jogo tem a oferecer em termos de possibilidades e diálogos jogando apenas uma vez. O jogo conta com o recurso de cross-save entre todas as plataformas que são Xbox Series, PS5 e PC.</p>
+            </div>
+        </section>
+    </section>
+    
+
+    <script src="js/carousel-rpg.js"></script>
+    <script src="js/characters-rpg.js"></script>
+
 </body>
 </html>
